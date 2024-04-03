@@ -1,0 +1,12 @@
+@import "variables.scss";
+
+.bg-logo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 5rem;
+  color: $white;
+  padding: 8px 24px;
+  font-family: "Bitter";
+  opacity: 0.8;
+}

@@ -1,5 +1,28 @@
+@import "variables.scss";
+
 .container {
-  background-color: var(--white);
+  background-color: $white;
   border-radius: 16px;
   padding: 24px;
+
+  .row {
+    gap: 16px;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      button {
+        background-color: $blue;
+        border: 0;
+        transition: all 0.3s;
+        margin-top: 16px;
+
+        &:hover {
+          background-color: darken($blue, 8%);
+        }
+      }
+    }
+  }
 }

@@ -1,0 +1,17 @@
+$white: hsl(210, 100%, 99%);
+$sky-blue: hsl(214, 100%, 80%);
+$violet: hsl(263, 100%, 61%);
+$navy: hsl(240, 42%, 35%);
+$blue: hsl(217, 83%, 40%);
+
+$background-gradient: linear-gradient(
+  145deg,
+  $white 0%,
+  $sky-blue 50%,
+  $violet 100%
+);
+
+@font-face {
+  font-family: "Bitter";
+  src: url("./Bitter-VariableFont_wght.ttf") format("truetype");
+}
