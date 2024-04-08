@@ -1,7 +1,7 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 
-const serverUrl = process.env["SERVER_URL"];
+const serverUrl = import.meta.env["NG_APP_SERVER_URL"];
 
 export type AuthData = {
   message?: string;
