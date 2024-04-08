@@ -31,9 +31,8 @@ export class AuthComponent {
     return this.email.length > 0 && this.password.length > 0;
   }
 
-  onError(error: unknown) {
-    console.log(error);
-    this.error = error as string;
+  onError() {
+    this.error = "Invalid credentials";
   }
 
   login() {
