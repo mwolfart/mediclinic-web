@@ -27,7 +27,6 @@ export class AuthComponent {
   ) {}
 
   isFormValid() {
-    console.log(this.email, this.password);
     return this.email.length > 0 && this.password.length > 0;
   }
 
@@ -41,7 +40,6 @@ export class AuthComponent {
       this.data.load(this.authService.authenticate(this.email, this.password), {
         onError: this.onError,
       });
-      console.log(this.data);
     } else {
       this.error = "Please fill in all fields";
     }
