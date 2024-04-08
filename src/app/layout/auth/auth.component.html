@@ -9,6 +9,7 @@
           class="form-control"
           id="email"
           placeholder="Enter email"
+          *ngValue="email"
         />
       </div>
       <div class="form-group">
@@ -18,9 +19,16 @@
           class="form-control"
           id="password"
           placeholder="Password"
+          *ngValue="password"
         />
       </div>
-      <button type="submit" class="btn btn-primary">Login</button>
+      <div>
+        <p>{{ error }}</p>
+        <p *ngIf="data.error">Error in authentication</p>
+      </div>
+      <button type="submit" class="btn btn-primary" (click)="login()">
+        Login
+      </button>
     </form>
   </div>
 </div>
